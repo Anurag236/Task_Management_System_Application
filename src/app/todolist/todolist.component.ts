@@ -7,7 +7,7 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./todolist.component.css']
 })
 export class TodolistComponent implements OnInit {
-  taskArray = [{ taskName: 'Brush teeth', description: '', dueDate: '', priority: 'low', isCompleted: false, isEditable: false }];
+  taskArray = [{ taskName: 'Daily Coding Challenge', description: 'Practise make men perfect', dueDate: '07/20/2024', priority: 'high', isCompleted: false, isEditable: false }];
 
   constructor() { }
 
