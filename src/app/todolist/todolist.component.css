@@ -1,0 +1,192 @@
+/* Global styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 0;
+  }
+  
+  hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"], textarea, select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  input[type="text"]:focus, textarea:focus, select:focus {
+    border-color: #337ab7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  button[type="submit"] {
+    background-color: #337ab7;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #23527c;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th, .table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .table th {
+    background-color: #f0f0f0;
+  }
+  
+  .table td input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .table td input[type="text"]:focus {
+    border-color: #337ab7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #myCheckbox {
+    margin-left: 30px;
+  }
+  
+  #taskInTable {
+    max-width: 300px;
+  }
+  
+  #delete, #edit, #save {
+    width: 60px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #delete {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  #delete:hover {
+    background-color: #c82333;
+  }
+  
+  #edit {
+    background-color: #337ab7;
+    color: #fff;
+  }
+  
+  #edit:hover {
+    background-color: #23527c;
+  }
+  
+  #save {
+    background-color: #ffc107;
+    color: #fff;
+  }
+  
+  #save:hover {
+    background-color: #ffa07a;
+  }
+  
+  .edit {
+    border: solid 2px orange;
+  }
+  
+  .not-edit {
+    border: none;
+  }
+  
+  .crossed {
+    text-decoration: line-through;
+  }
+  
+  /* Responsive styles */
+  
+  @media (max-width: 768px) {
+    .container {
+      max-width: 600px;
+    }
+    .table {
+      font-size: 14px;
+    }
+    #taskInTable {
+      max-width: 200px;
+    }
+    #delete, #edit, #save {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      max-width: 400px;
+    }
+    .table {
+      font-size: 12px;
+    }
+    #taskInTable {
+      max-width: 150px;
+    }
+    #delete, #edit, #save {
+      font-size: 12px;
+      padding: 6px;
+    }
+  }
